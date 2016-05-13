@@ -15,7 +15,7 @@ class RedBox
       p "Movie Out Of Stock"
     else
       $sqlconnection.execute("update movies set stock=stock-1 where name='#{movie_name}'")
-      $sqlconnection.execute("update movies set stock=stock-1 where name='#{movie_name}'")
+      $sqlconnection.execute("update user set item_count=item_count-1 where user_name='#{user_name}'")
     end
 
   end
