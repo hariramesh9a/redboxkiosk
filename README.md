@@ -12,14 +12,22 @@ Here are the business scenarios
 
 Scenario: Movies available and user can rent a movie
 Given movies are available
+
 When user rent the movie
+
 Then transaction is successful
+
 And movie count in kiosk reduce by one
+
 And movie count with user go up by one
 
 Scenario: Movies not avaialble and user try to rent
 Given movies are not available
+
 When user rent the movie
+
 Then transaction is failed
+
+To check how this is done goto http://etlcode.com/index.php/tutorial/rubycucumber/Database-Testing
 
 
